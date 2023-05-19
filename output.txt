@@ -1,0 +1,85 @@
+Virtual User Script started at: 18/05/2023 11:01:59
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 2016; build 793 (Nov 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Loadtest\05 - WMS\02 - Vusers\02 - Dev\WMS05\\default.cfg"  	[MsgId: MMSG-27141]
+DUVAL LOG: Date,Time,FileName
+vuser_init.c(15): Notify: Saving Parameter "waitTime = 0".
+vuser_init.c(16): Notify: Saving Parameter "previousIteration = 0".
+Ending action vuser_init.
+Starting action WMS05_01_BatchCreate.
+WMS05_01_BatchCreate.c(3): Notify: Parameter Substitution: parameter "iteration" =  "1"
+WMS05_01_BatchCreate.c(5): Notify: Transaction "WMS05_010__BatchCreate" started.
+WMS05_01_BatchCreate.c(7): Notify: Saving Parameter "fileLocation = C:\LoadRunnerFiles\Optimiza\".
+WMS05_01_BatchCreate.c(9): Notify: Writing data to WMS05_FTP.bat file.
+WMS05_01_BatchCreate.c(13): Notify: Transaction "WMS05_010__BatchCreate" ended with a "Pass" status (Duration: 0.0018).
+Ending action WMS05_01_BatchCreate.
+Running Vuser...
+Starting iteration 1.
+Starting action WMS05_00_Control.
+ 
+ 
+---------------------------------------------------------------------------------------------------
+------------------------------------------->>> WMS05 <<<-------------------------------------------
+------------------------------------>>> 18/05/2023 11:02:00 <<<------------------------------------
+---------------------------------------------------------------------------------------------------
+ 
+WMS05_00_Control.c(3): Notify: Transaction "WMS05" started.
+WMS05_00_Control.c(6): Notify: Parameter Substitution: parameter "waitTime" =  "0"
+WMS05_00_Control.c(6): The week count starts from 0.
+WMS05_00_Control.c(6): Notify: Saving Parameter "iterationTime = 11:02:00".
+WMS05_00_Control.c(7): Notify: Parameter Substitution: parameter "previousIteration" =  "0"
+WMS05_00_Control.c(7): Notify: Parameter Substitution: parameter "iterationTime" =  "11:02:00"
+WMS05_00_Control.c(8): Notify: Parameter Substitution: parameter "waitTime" =  "0"
+WMS05_00_Control.c(8): dvl_think_time: 0 seconds
+WMS05_02_FileCreate.c(3): Notify: Parameter Substitution: parameter "iteration" =  "1"
+WMS05_02_FileCreate.c(5): Notify: Transaction "WMS05_020__FileCreate" started.
+WMS05_02_FileCreate.c(7): Notify: Parameter Substitution: parameter "vts" =  "10.11.75.141"
+WMS05_02_FileCreate.c(7): Notify: Saving Parameter "fileName = ORDERZ1194113".
+WMS05_02_FileCreate.c(7): Notify: Saving Parameter "fileData = 937|MRB280|150.00|XXXXXXXX|C0|caukett@dxc.com|00142200|GUEST MEDICAL LTD".
+WMS05_02_FileCreate.c(7): Notify: Saving Parameter "additionalDays = 7".
+WMS05_02_FileCreate.c(7): Notify: Saving Parameter "fileCreatedDate = 17/04/2023 11:32:11".
+WMS05_02_FileCreate.c(7): Notify: Saving Parameter "waitTime = 2".
+WMS05_02_FileCreate.c(9): Notify: Parameter Substitution: parameter "additionalDays" =  "7"
+WMS05_02_FileCreate.c(9): The week count starts from 0.
+WMS05_02_FileCreate.c(9): Notify: Saving Parameter "deliveryDate = 25052023".
+WMS05_02_FileCreate.c(11): Notify: Parameter Substitution: parameter "deliveryDate" =  "25052023"
+WMS05_02_FileCreate.c(11): Notify: Saving Parameter "fileData = 937|MRB280|150.00|25052023|C0|caukett@dxc.com|00142200|GUEST MEDICAL LTD".
+WMS05_02_FileCreate.c(16): Notify: Parameter Substitution: parameter "fileData" =  "937|MRB280|150.00|25052023|C0|caukett@dxc.com|00142200|GUEST MEDICAL LTD"
+WMS05_02_FileCreate.c(16): Notify: Parameter Substitution: parameter "fileName" =  "ORDERZ1194113"
+WMS05_02_FileCreate.c(16): Notify: Writing data to ORDERZ1194113.txt file.
+WMS05_02_FileCreate.c(25): Notify: Parameter Substitution: parameter "vts" =  "10.11.75.141"
+WMS05_02_FileCreate.c(25): Notify: Saving Parameter "waitTime = 0".
+WMS05_02_FileCreate.c(27): Notify: Parameter Substitution: parameter "iteration" =  "1"
+WMS05_02_FileCreate.c(27): Notify: Saving Parameter "previousIteration = 1".
+DUVAL LOG: 18/05/2023,11:02:00,ORDERZ1194113
+WMS05_02_FileCreate.c(31): Notify: Transaction "WMS05_020__FileCreate" ended with a "Pass" status (Duration: 0.0524 Wasted Time: 0.0145).
+WMS05_03_FileSend.c(8): Notify: Parameter Substitution: parameter "iteration" =  "1"
+WMS05_03_FileSend.c(10): Notify: Parameter Substitution: parameter "fileLocation" =  "C:\LoadRunnerFiles\Optimiza\"
+WMS05_03_FileSend.c(10): Notify: Parameter Substitution: parameter "fileName" =  "ORDERZ1194113"
+WMS05_03_FileSend.c(12): Notify: Saving Parameter "errorCheck = ".
+ 
+ 
+---------------------------------------------------------------------------------------------------
+------------------------------------>>> WMS05_030__FileSend <<<------------------------------------
+------------------------------------>>> 18/05/2023 11:02:00 <<<------------------------------------
+---------------------------------------------------------------------------------------------------
+ 
+WMS05_03_FileSend.c(14): Notify: Transaction "WMS05_030__FileSend" started.
+WMS05_03_FileSend.c(17): 
+DUVAL LOG: 18/05/2023,11:02:00,--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DUVAL LOG: 18/05/2023,11:02:00,
+DUVAL LOG: 18/05/2023,11:02:00,C:\LoadRunnerFiles\Optimiza\ORDERZ1194113.txt |           74 B |    0.0 KB/s | binary | 100%
+WMS05_03_FileSend.c(31): File sent: 1
+WMS05_03_FileSend.c(32): Notify: Transaction "BP0501_FilesSent" created.
+WMS05_03_FileSend.c(38): Notify: Parameter Substitution: parameter "errorCheck" =  ""
+WMS05_03_FileSend.c(49): Notify: Transaction "WMS05_030__FileSend" ended with a "Pass" status (Duration: 1.0960).
+WMS05_00_Control.c(17): Notify: Transaction "WMS05" ended with a "Pass" status (Duration: 1.1675 Think Time: 0.0000 Wasted Time: 0.0145).
+WMS05_00_Control.c(18): Notify: Parameter Substitution: parameter "iteration" =  "1"
+Ending action WMS05_00_Control.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

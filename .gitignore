@@ -1,0 +1,16 @@
+*.sdf
+combined_*.c
+ThumbnailsCache.tmp
+*.bak
+pre_cci.c
+*.ci
+*.idx
+*.pickle
+mdrv_cmd.txt
+options.txt
+*.xml
+**/result*
+*.json
+**/data
+*.log
+*.csv
